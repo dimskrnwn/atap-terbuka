@@ -1,1 +1,783 @@
-placeholder-will-replace
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Atap Terbuka — SUV 250–350 juta yang sudah punya sunroof</title>
+<meta name="description" content="Perbandingan editorial SUV bensin, hybrid, dan listrik di Indonesia, rentang Rp250–350 juta, yang wajib punya sunroof. Harga OTR Jakarta 4 September 2026.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Sora:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --night:#100f0c;
+  --night-2:#1a1814;
+  --ink:#1c1914;
+  --ink-2:#4a4438;
+  --ink-3:#7a7264;
+  --paper:#f4efe4;
+  --paper-2:#ebe4d4;
+  --sand:#ddd4c2;
+  --line:#d4cbb8;
+  --sun:#d89a14;
+  --sun-deep:#a86a0c;
+  --sky:#5e9eae;
+  --moss:#1f4d3a;
+  --moss-2:#2f6b50;
+  --ember:#b24a22;
+  --glass:rgba(244,239,228,.08);
+  --max:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  background:var(--night);
+  color:var(--ink);
+  font-family:"Sora",system-ui,sans-serif;
+  font-size:15.5px;
+  line-height:1.6;
+  font-feature-settings:"ss01" 1;
+}
+img,svg{display:block}
+a{color:inherit}
+button{font:inherit;cursor:pointer}
+::selection{background:var(--sun);color:var(--night)}
+
+.hero{
+  position:relative;
+  min-height:min(92vh,820px);
+  padding:28px 22px 72px;
+  color:var(--paper);
+  overflow:hidden;
+  background:
+    radial-gradient(ellipse 70% 55% at 50% -8%, #f0c15a 0%, #c47a16 18%, transparent 46%),
+    radial-gradient(ellipse 90% 70% at 50% 100%, #1c2a32 0%, transparent 55%),
+    var(--night);
+}
+.hero::after{
+  content:"";
+  position:absolute;inset:0;
+  background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px);
+  background-size:100% 7px;
+  mask-image:linear-gradient(180deg,#000,transparent 70%);
+  pointer-events:none;
+  opacity:.35;
+}
+.nav{
+  position:relative;z-index:2;
+  max-width:var(--max);margin:0 auto;
+  display:flex;justify-content:space-between;align-items:center;
+  font-size:12px;letter-spacing:.14em;text-transform:uppercase;
+  color:rgba(244,239,228,.62);
+}
+.nav b{color:var(--paper);font-weight:600;letter-spacing:.16em}
+.aperture{
+  position:relative;z-index:2;
+  width:min(560px,88vw);
+  margin:64px auto 0;
+  aspect-ratio:16/9;
+  border-radius:22px 22px 18px 18px;
+  border:1.5px solid rgba(244,239,228,.22);
+  background:
+    linear-gradient(180deg,rgba(16,15,12,.15),rgba(16,15,12,.55)),
+    radial-gradient(ellipse at 50% 0%, #ffe08a 0%, #e8a030 28%, #6ea8c0 62%, #1a3040 100%);
+  box-shadow:
+    0 0 0 10px rgba(244,239,228,.04),
+    inset 0 20px 40px rgba(255,220,140,.18);
+  overflow:hidden;
+}
+.aperture .shade{
+  position:absolute;left:8%;right:8%;top:0;height:18%;
+  background:linear-gradient(180deg,rgba(16,15,12,.55),transparent);
+  border-radius:0 0 40% 40%;
+}
+.aperture .beam{
+  position:absolute;inset:auto 18% -20% 18%;height:70%;
+  background:radial-gradient(ellipse at 50% 0%, rgba(255,210,110,.45), transparent 70%);
+  filter:blur(8px);
+}
+.hero-copy{
+  position:relative;z-index:2;
+  max-width:780px;margin:40px auto 0;text-align:center;
+}
+.kicker{
+  display:inline-flex;align-items:center;gap:10px;
+  font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;
+  color:rgba(244,239,228,.7);margin:0 0 16px;
+}
+.kicker::before,.kicker::after{content:"";width:28px;height:1px;background:rgba(244,239,228,.35)}
+.hero h1{
+  font-family:"Fraunces",Georgia,serif;
+  font-optical-sizing:auto;
+  font-weight:600;
+  font-size:clamp(42px,8vw,84px);
+  line-height:.92;
+  letter-spacing:-.03em;
+  margin:0 0 18px;
+}
+.hero h1 em{font-style:italic;color:#f0c15a}
+.lede{
+  margin:0 auto;
+  max-width:46ch;
+  color:rgba(244,239,228,.78);
+  font-size:clamp(15px,2vw,17.5px);
+  line-height:1.55;
+}
+.meta-row{
+  display:flex;flex-wrap:wrap;justify-content:center;gap:10px 18px;
+  margin-top:28px;
+  font-size:12px;letter-spacing:.04em;
+  color:rgba(244,239,228,.55);
+}
+.meta-row span{display:inline-flex;align-items:center;gap:8px}
+.dot{width:5px;height:5px;border-radius:50%;background:var(--sun)}
+
+.sheet{
+  background:var(--paper);
+  border-radius:28px 28px 0 0;
+  margin-top:-28px;
+  position:relative;z-index:3;
+}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 clamp(18px,4vw,36px)}
+section{padding:56px 0}
+section + section{border-top:1px solid var(--line)}
+h2{
+  font-family:"Fraunces",Georgia,serif;
+  font-optical-sizing:auto;
+  font-weight:600;
+  font-size:clamp(26px,4vw,38px);
+  letter-spacing:-.025em;
+  line-height:1.12;
+  margin:0 0 10px;
+}
+h2 em{font-style:italic;color:var(--sun-deep)}
+.sub{margin:0 0 28px;color:var(--ink-2);max-width:62ch}
+
+.criteria{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:1px;
+  background:var(--line);
+  border:1px solid var(--line);
+  border-radius:16px;
+  overflow:hidden;
+  margin-top:8px;
+}
+.criteria article{
+  background:var(--paper);
+  padding:20px 18px 22px;
+}
+.criteria .n{
+  font-family:"Fraunces",serif;
+  font-size:28px;font-weight:600;letter-spacing:-.03em;
+  color:var(--sun-deep);margin:0 0 8px;
+}
+.criteria h3{margin:0 0 6px;font-size:14.5px;font-weight:600}
+.criteria p{margin:0;font-size:13px;color:var(--ink-2);line-height:1.5}
+
+.price-line{
+  list-style:none;
+  margin:8px 0 12px;
+  padding:0;
+  display:grid;
+  gap:12px;
+}
+.price-line li{
+  display:grid;
+  grid-template-columns:148px minmax(0,1fr) 52px;
+  align-items:center;
+  gap:12px;
+  font-size:13px;
+}
+.price-line b{font-weight:600}
+.price-line .track{
+  height:8px;
+  border-radius:99px;
+  background:var(--sand);
+  overflow:hidden;
+}
+.price-line .track i{
+  display:block;
+  height:100%;
+  width:var(--p);
+  background:var(--sun);
+  border-radius:99px;
+}
+.price-line .pick b{color:var(--sun-deep)}
+.price-line .pick .track i{background:var(--sun-deep)}
+.price-line span{text-align:right;font-variant-numeric:tabular-nums;color:var(--ink-2)}
+.ruler-scale{
+  display:flex;justify-content:space-between;
+  font-size:11.5px;color:var(--ink-3);
+  padding-left:160px;padding-right:64px;
+}
+
+.toolbar{
+  display:flex;flex-wrap:wrap;gap:8px;
+  margin:0 0 22px;
+}
+.chip{
+  border:1px solid var(--line);
+  background:transparent;
+  color:var(--ink-2);
+  padding:8px 14px;
+  border-radius:999px;
+  font-size:13px;font-weight:500;
+}
+.chip[aria-pressed="true"]{
+  background:var(--night);
+  border-color:var(--night);
+  color:var(--paper);
+}
+
+.garage{
+  display:grid;
+  grid-template-columns:repeat(5,minmax(0,1fr));
+  gap:12px;
+}
+.car{
+  --accent:var(--ink);
+  position:relative;
+  background:var(--paper-2);
+  border:1px solid transparent;
+  border-radius:18px;
+  padding:18px 16px 20px;
+  text-align:left;
+  color:inherit;
+  min-height:100%;
+  transition:transform .2s ease, border-color .2s ease, background .2s ease;
+}
+.car:hover,.car:focus-visible{transform:translateY(-3px);border-color:var(--accent)}
+.car[aria-pressed="true"]{
+  background:#fff;
+  border-color:var(--accent);
+  outline:2px solid color-mix(in srgb, var(--accent) 35%, transparent);
+  outline-offset:2px;
+}
+.car .roof{
+  height:54px;
+  border-radius:10px 10px 4px 4px;
+  margin-bottom:16px;
+  position:relative;
+  overflow:hidden;
+  background:#2a3238;
+}
+.car .roof .glass{
+  position:absolute;left:14%;right:14%;top:10%;bottom:18%;
+  border-radius:6px;
+  background:linear-gradient(180deg,#9fd0dc,#6a9aaa 55%,#3d5c68);
+}
+.car.pano .roof .glass{left:8%;right:8%;top:8%;bottom:10%}
+.car .roof .sun{
+  position:absolute;width:18px;height:18px;border-radius:50%;
+  background:#ffe08a;right:22%;top:12%;
+  box-shadow:0 0 16px #ffd36a;
+}
+.badge{
+  display:inline-block;
+  font-size:10.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;
+  padding:3px 8px;border-radius:999px;margin-bottom:10px;
+  background:color-mix(in srgb, var(--accent) 12%, var(--paper));
+  color:var(--accent);
+}
+.car h3{
+  font-family:"Fraunces",serif;
+  font-size:20px;font-weight:600;letter-spacing:-.02em;
+  margin:0 0 2px;line-height:1.15;
+}
+.kind{margin:0 0 14px;font-size:12.5px;color:var(--ink-3)}
+.price{
+  font-family:"Fraunces",serif;
+  font-size:28px;font-weight:600;letter-spacing:-.03em;
+  line-height:1;margin:0;
+}
+.price small{font-size:14px;margin-left:2px}
+.price-note{margin:6px 0 0;font-size:11.5px;color:var(--ink-3)}
+.car ul{
+  list-style:none;margin:16px 0 0;padding:14px 0 0;
+  border-top:1px solid var(--line);
+  font-size:12.5px;color:var(--ink-2);
+}
+.car li{padding:3px 0}
+.car li strong{color:var(--ink);font-weight:600}
+
+.hidden{display:none !important}
+
+.tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:0 -4px}
+table{
+  width:100%;
+  border-collapse:separate;
+  border-spacing:0;
+  min-width:860px;
+  font-size:13.5px;
+}
+thead th{
+  position:sticky;top:0;
+  background:var(--paper);
+  font-family:"Fraunces",serif;
+  font-weight:600;font-size:13.5px;
+  text-align:left;
+  padding:12px 10px 14px;
+  border-bottom:1.5px solid var(--ink);
+  white-space:nowrap;
+}
+thead th:first-child{color:var(--ink-3);font-weight:500;font-family:"Sora",sans-serif}
+tbody th{
+  font-weight:500;color:var(--ink-2);text-align:left;
+  padding:12px 10px;border-bottom:1px solid var(--line);
+  white-space:nowrap;width:18%;
+}
+td{
+  padding:12px 10px;
+  border-bottom:1px solid var(--line);
+  vertical-align:top;
+}
+tr.hl td,tr.hl th{background:#fff8e6}
+td.best{color:var(--moss);font-weight:600}
+td.warn{color:var(--ember);font-weight:600}
+td.soft{color:var(--ink-3)}
+.col-on{background:rgba(216,154,20,.08)}
+
+.verdict{
+  display:grid;
+  grid-template-columns:1.3fr .9fr;
+  gap:18px;
+}
+.pick,.alt{
+  border-radius:18px;
+  padding:28px 26px;
+}
+.pick{background:var(--night);color:var(--paper)}
+.alt{background:var(--paper-2);border:1px solid var(--line)}
+.pick .eyebrow,.alt .eyebrow{
+  font-size:11px;letter-spacing:.16em;text-transform:uppercase;
+  margin:0 0 10px;
+}
+.pick .eyebrow{color:#f0c15a}
+.alt .eyebrow{color:var(--sun-deep)}
+.pick h3,.alt h3{
+  font-family:"Fraunces",serif;
+  font-size:clamp(22px,3vw,30px);
+  letter-spacing:-.025em;
+  margin:0 0 10px;
+}
+.pick p,.alt p{margin:0;color:inherit;opacity:.82}
+.alts{display:grid;gap:12px}
+
+.checks{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.checks li{
+  display:grid;
+  grid-template-columns:22px 1fr;
+  gap:12px;
+  align-items:start;
+  padding:16px 18px;
+  background:var(--paper-2);
+  border-radius:14px;
+}
+.box{
+  width:18px;height:18px;margin-top:3px;
+  border:1.5px solid var(--ink-3);
+  border-radius:4px;
+}
+.checks b{font-weight:600}
+.checks p{margin:4px 0 0;color:var(--ink-2);font-size:13.5px}
+
+.aside{
+  margin-top:18px;
+  padding:20px 22px;
+  border-left:3px solid var(--sun);
+  background:#fff8e6;
+  border-radius:0 12px 12px 0;
+}
+.aside h3{margin:0 0 6px;font-size:15px}
+.aside p{margin:0;color:var(--ink-2);font-size:14px}
+
+footer.src{
+  background:var(--night);
+  color:rgba(244,239,228,.62);
+  padding:48px 0 64px;
+  font-size:13px;
+}
+footer.src .wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:28px}
+footer.src h2{color:var(--paper);font-size:22px}
+footer.src a{color:#f0c15a;text-decoration:none;border-bottom:1px solid rgba(240,193,90,.35)}
+footer.src a:hover{border-bottom-color:#f0c15a}
+footer.src ul{list-style:none;margin:10px 0 0;padding:0}
+footer.src li{padding:4px 0}
+
+a:focus-visible,button:focus-visible,[tabindex]:focus-visible{
+  outline:2px solid var(--sun);
+  outline-offset:3px;
+}
+
+@media (max-width:1100px){
+  .garage{grid-template-columns:repeat(3,1fr)}
+  .criteria{grid-template-columns:1fr 1fr}
+}
+@media (max-width:760px){
+  .garage{grid-template-columns:1fr}
+  .verdict,footer.src .wrap{grid-template-columns:1fr}
+  .criteria{grid-template-columns:1fr}
+  .aperture{margin-top:40px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important}
+}
+@media print{
+  .hero{min-height:auto;padding:24px;background:#fff;color:#000}
+  .sheet{margin:0;border-radius:0}
+  footer.src{background:#fff;color:#000}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="nav">
+    <b>Atap Terbuka</b>
+    <span>OTR Jakarta · 4 Sep 2026</span>
+  </div>
+
+  <div class="aperture" aria-hidden="true">
+    <span class="shade"></span>
+    <span class="beam"></span>
+  </div>
+
+  <div class="hero-copy">
+    <p class="kicker">Editorial perbandingan</p>
+    <h1>SUV yang <em>membuka langit</em></h1>
+    <p class="lede">Lima kandidat di rentang Rp250–350 juta. Bensin, hybrid, atau listrik — syaratnya satu: sunroof sudah standar, bukan opsi dealer.</p>
+    <div class="meta-row">
+      <span><i class="dot"></i>Harga resmi pabrikan</span>
+      <span><i class="dot"></i>Hanya varian yang punya sunroof</span>
+      <span><i class="dot"></i>Panoramic dihitung sebagai bonus</span>
+    </div>
+  </div>
+</header>
+
+<div class="sheet">
+  <div class="wrap">
+
+    <section>
+      <h2>Syarat yang <em>tidak dinegosiasi</em></h2>
+      <p class="sub">Filter ini memangkas puluhan SUV di kelas yang sama. Yang lolos hanya yang atapnya benar-benar bisa dibuka — atau, lebih baik lagi, kaca yang membentang.</p>
+      <div class="criteria">
+        <article>
+          <p class="n">01</p>
+          <h3>Harga 250–350 juta</h3>
+          <p>OTR Jakarta, harga reguler di situs resmi. Promo kuota dicatat terpisah.</p>
+        </article>
+        <article>
+          <p class="n">02</p>
+          <h3>SUV, 5 kursi</h3>
+          <p>Bukan MPV, bukan city car. Ground clearance dan habitus SUV kompakt.</p>
+        </article>
+        <article>
+          <p class="n">03</p>
+          <h3>Bensin atau listrik</h3>
+          <p>Hybrid masuk sebagai bensin yang dibantu motor listrik, tanpa colok.</p>
+        </article>
+        <article>
+          <p class="n">04</p>
+          <h3>Sunroof wajib</h3>
+          <p>Electric tilt-slide minimum. Panoramic adalah bonus yang jarang di harga ini.</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Di mana mereka <em>duduk</em> di budget</h2>
+      <p class="sub">Semua lima lolos batas atas. Satu-satunya panoramic di dalam rentang ini duduk di tengah — bukan yang termahal.</p>
+      <ol class="price-line">
+        <li style="--p:53%"><b>Alvez EX</b><span class="track"><i></i></span><span>303</span></li>
+        <li style="--p:54.9%"><b>Cross Sport</b><span class="track"><i></i></span><span>304,9</span></li>
+        <li class="pick" style="--p:74.9%"><b>J5 EV Premium</b><span class="track"><i></i></span><span>324,9</span></li>
+        <li style="--p:89.8%"><b>Cross CSH</b><span class="track"><i></i></span><span>339,8</span></li>
+        <li style="--p:90%"><b>Venue 1.0T</b><span class="track"><i></i></span><span>340</span></li>
+      </ol>
+      <div class="ruler-scale"><span>Rp250 jt</span><span>Rp300 jt</span><span>Rp350 jt</span></div>
+    </section>
+
+    <section>
+      <h2>Lima yang lolos</h2>
+      <p class="sub">Klik kartu untuk menandai kolomnya di tabel. Saring menurut mesin kalau Anda sudah punya preferensi bensin atau listrik.</p>
+
+      <div class="toolbar" role="group" aria-label="Saring tipe mesin">
+        <button class="chip" type="button" data-filter="all" aria-pressed="true">Semua</button>
+        <button class="chip" type="button" data-filter="ice" aria-pressed="false">Bensin</button>
+        <button class="chip" type="button" data-filter="hev" aria-pressed="false">Hybrid</button>
+        <button class="chip" type="button" data-filter="ev" aria-pressed="false">Listrik</button>
+      </div>
+
+      <div class="garage">
+        <button class="car" type="button" data-id="alvez" data-type="ice" style="--accent:#7a5a2a" aria-pressed="false">
+          <div class="roof"><span class="glass"></span><span class="sun"></span></div>
+          <span class="badge">Termurah</span>
+          <h3>Alvez EX</h3>
+          <p class="kind">Wuling · Bensin 1.5 CVT</p>
+          <p class="price">303<small>jt</small></p>
+          <p class="price-note">Harga reguler OTR Jakarta</p>
+          <ul>
+            <li>105 hp · 143 Nm</li>
+            <li><strong>Electric sunroof</strong></li>
+            <li>Dua airbag — ADAS ada</li>
+          </ul>
+        </button>
+
+        <button class="car" type="button" data-id="sport" data-type="ice" style="--accent:#b24a22" aria-pressed="false">
+          <div class="roof"><span class="glass"></span><span class="sun"></span></div>
+          <span class="badge">Turbo bensin</span>
+          <h3>Tiggo Cross Sport</h3>
+          <p class="kind">Chery · 1.5T DCT</p>
+          <p class="price">304,9<small>jt</small></p>
+          <p class="price-note">Harga reguler OTR Jakarta</p>
+          <ul>
+            <li>147 PS · 210 Nm</li>
+            <li><strong>Electric sunroof</strong></li>
+            <li>7 airbag · dual 10,25"</li>
+          </ul>
+        </button>
+
+        <button class="car pano" type="button" data-id="j5" data-type="ev" style="--accent:#1f4d3a" aria-pressed="true">
+          <div class="roof"><span class="glass"></span><span class="sun"></span></div>
+          <span class="badge">Panoramic · paling pas</span>
+          <h3>J5 EV Premium</h3>
+          <p class="kind">Jaecoo · Listrik FWD</p>
+          <p class="price">324,9<small>jt</small></p>
+          <p class="price-note">Harga reguler, bukan promo</p>
+          <ul>
+            <li>155 kW · 288 Nm</li>
+            <li><strong>Panoramic 1,45 m²</strong></li>
+            <li>60,9 kWh · 461 km NEDC</li>
+          </ul>
+        </button>
+
+        <button class="car" type="button" data-id="csh" data-type="hev" style="--accent:#3d6b8a" aria-pressed="false">
+          <div class="roof"><span class="glass"></span><span class="sun"></span></div>
+          <span class="badge">Jelajah terjauh</span>
+          <h3>Tiggo Cross CSH</h3>
+          <p class="kind">Chery · Hybrid, tanpa colok</p>
+          <p class="price">339,8<small>jt</small></p>
+          <p class="price-note">Harga reguler OTR Jakarta</p>
+          <ul>
+            <li>204 PS · 310 Nm</li>
+            <li><strong>Electric sunroof</strong></li>
+            <li>1.000 km+ per tangki</li>
+          </ul>
+        </button>
+
+        <button class="car" type="button" data-id="venue" data-type="ice" style="--accent:#2a4a7a" aria-pressed="false">
+          <div class="roof"><span class="glass"></span><span class="sun"></span></div>
+          <span class="badge">Jaringan servis lebar</span>
+          <h3>Venue 1.0T</h3>
+          <p class="kind">Hyundai · Turbo 7-DCT</p>
+          <p class="price">340<small>jt</small></p>
+          <p class="price-note">Harga resmi pricelist</p>
+          <ul>
+            <li>120 PS · 172 Nm</li>
+            <li><strong>Power tilt-slide</strong></li>
+            <li>Paling ringkas di daftar</li>
+          </ul>
+        </button>
+      </div>
+    </section>
+
+    <section>
+      <h2>Spesifikasi <em>berdampingan</em></h2>
+      <p class="sub">Angka diambil dari halaman model atau pricelist resmi. Sel yang hijau adalah yang unggul di baris itu — bukan nilai mutlak.</p>
+      <div class="tablewrap">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Spesifikasi</th>
+              <th scope="col" data-col="alvez">Alvez EX</th>
+              <th scope="col" data-col="sport">Tiggo Sport</th>
+              <th scope="col" data-col="j5">J5 EV Premium</th>
+              <th scope="col" data-col="csh">Tiggo CSH</th>
+              <th scope="col" data-col="venue">Venue 1.0T</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Harga resmi</th>
+              <td data-col="alvez" class="best">Rp303 jt</td>
+              <td data-col="sport">Rp304,9 jt</td>
+              <td data-col="j5">Rp324,9 jt</td>
+              <td data-col="csh">Rp339,8 jt</td>
+              <td data-col="venue">Rp340 jt</td>
+            </tr>
+            <tr>
+              <th scope="row">Tipe</th>
+              <td data-col="alvez">Bensin, FWD</td>
+              <td data-col="sport">Bensin turbo, FWD</td>
+              <td data-col="j5">Listrik, FWD</td>
+              <td data-col="csh">Hybrid, FWD</td>
+              <td data-col="venue">Bensin turbo, FWD</td>
+            </tr>
+            <tr>
+              <th scope="row">Tenaga</th>
+              <td data-col="alvez">105 hp</td>
+              <td data-col="sport">147 PS</td>
+              <td data-col="j5" class="best">155 kW ≈ 211 PS</td>
+              <td data-col="csh">204 PS</td>
+              <td data-col="venue">120 PS</td>
+            </tr>
+            <tr>
+              <th scope="row">Torsi</th>
+              <td data-col="alvez">143 Nm</td>
+              <td data-col="sport">210 Nm</td>
+              <td data-col="j5">288 Nm</td>
+              <td data-col="csh" class="best">310 Nm</td>
+              <td data-col="venue">172 Nm</td>
+            </tr>
+            <tr>
+              <th scope="row">Jelajah / isi ulang</th>
+              <td data-col="alvez">Tangki 45 L</td>
+              <td data-col="sport">Isi bensin biasa</td>
+              <td data-col="j5">461 km NEDC · 60,9 kWh</td>
+              <td data-col="csh" class="best">1.000 km+ / tangki</td>
+              <td data-col="venue">Isi bensin biasa</td>
+            </tr>
+            <tr>
+              <th scope="row">Isi daya cepat</th>
+              <td data-col="alvez" class="soft">Tidak perlu</td>
+              <td data-col="sport" class="soft">Tidak perlu</td>
+              <td data-col="j5">DC 130 kW · 0–100 7,3 dtk</td>
+              <td data-col="csh" class="soft">Hybrid, tanpa colok</td>
+              <td data-col="venue" class="soft">Tidak perlu</td>
+            </tr>
+            <tr>
+              <th scope="row">Panjang / wheelbase</th>
+              <td data-col="alvez">4.350 / 2.550</td>
+              <td data-col="sport">4.318 mm</td>
+              <td data-col="j5">4.380 / 2.620</td>
+              <td data-col="csh">4.330 / 2.610</td>
+              <td data-col="venue" class="soft">3.995 / 2.500</td>
+            </tr>
+            <tr class="hl">
+              <th scope="row">Sunroof</th>
+              <td data-col="alvez">Electric</td>
+              <td data-col="sport">Electric</td>
+              <td data-col="j5" class="best">Panoramic 1,45 m²</td>
+              <td data-col="csh">Electric</td>
+              <td data-col="venue">Power tilt-slide</td>
+            </tr>
+            <tr>
+              <th scope="row">Layar tengah</th>
+              <td data-col="alvez">10,25"</td>
+              <td data-col="sport">Dual 10,25"</td>
+              <td data-col="j5" class="best">13,2" Full HD</td>
+              <td data-col="csh">Dual 10,25"</td>
+              <td data-col="venue">8"</td>
+            </tr>
+            <tr>
+              <th scope="row">Keselamatan</th>
+              <td data-col="alvez" class="warn">2 airbag + ADAS</td>
+              <td data-col="sport">7 airbag, 7 ADAS</td>
+              <td data-col="j5">6 airbag, 17 ADAS</td>
+              <td data-col="csh" class="best">7 airbag, 17 ADAS</td>
+              <td data-col="venue">6 airbag</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <h2>Kalau harus <em>pilih satu</em></h2>
+      <p class="sub">Kriteria Anda menaruh panoramic sebagai bonus, bukan syarat. Di rentang ini, bonus itu hanya dimiliki satu mobil — dan harganya justru di bawah dua rival bensin termahal.</p>
+      <div class="verdict">
+        <article class="pick">
+          <p class="eyebrow">Paling pas kriteria</p>
+          <h3>Jaecoo J5 EV Premium</h3>
+          <p>Satu-satunya panoramic di bawah Rp350 juta, harga reguler, baterai paling besar di daftar, dan sunroof 1,45 m² yang tidak perlu menunggu kuota. Syaratnya: rumah siap wall charger.</p>
+        </article>
+        <div class="alts">
+          <article class="alt">
+            <p class="eyebrow">Belum siap listrik</p>
+            <h3>Tiggo Cross CSH</h3>
+            <p>Hybrid tanpa colok, tenaga dan torsi tertinggi di kelompok bensin, jelajah 1.000 km. Sunroof-nya electric biasa.</p>
+          </article>
+          <article class="alt">
+            <p class="eyebrow">Budget ketat, atap wajib</p>
+            <h3>Alvez EX atau Cross Sport</h3>
+            <p>Keduanya ~Rp303–305 juta. Sport lebih lengkap airbag-nya; Alvez paling hemat di kasir.</p>
+          </article>
+        </div>
+      </div>
+
+      <aside class="aside">
+        <h3>Sedikit di atas pagar: MG S5 EV Magnify</h3>
+        <p>Rp355,9 juta, panoramic, kabin terpanjang (4.476 mm, wheelbase 2.730 mm). Harga itu bertanda bintang untuk 1.500 pembeli pertama — Ignite yang Rp333,9 juta tidak punya panoramic, jadi tidak masuk filter.</p>
+      </aside>
+    </section>
+
+    <section>
+      <h2>Yang hanya bisa dipastikan di dealer</h2>
+      <p class="sub">Situs resmi tidak menjawab dua hal ini, dan keduanya bisa membalik keputusan.</p>
+      <ul class="checks">
+        <li>
+          <span class="box" aria-hidden="true"></span>
+          <span>
+            <b>Daya listrik rumah, untuk dua kandidat EV.</b>
+            <p>J5 EV Premium butuh wall charger. Tanyakan daya PLN yang dibutuhkan, biaya instalasi, dan apakah unit display sudah memakai baterai 60,9 kWh yang sama dengan yang dijual.</p>
+          </span>
+        </li>
+        <li>
+          <span class="box" aria-hidden="true"></span>
+          <span>
+            <b>Stok sunroof yang sama dengan brosur.</b>
+            <p>Beberapa unit indent datang dengan spesifikasi yang bergeser. Minta lihat mobil fisik — bukan render — dan pastikan kaca atapnya electric atau panoramic sesuai varian yang Anda bayar.</p>
+          </span>
+        </li>
+      </ul>
+    </section>
+
+  </div>
+</div>
+
+<footer class="src">
+  <div class="wrap">
+    <div>
+      <h2>Sumber</h2>
+      <p>Harga dan spesifikasi diakses 4 September 2026 dari situs resmi masing-masing pabrikan. Harga dapat berubah. Dimensi J5 EV memakai angka yang beredar di materi model; jarak tempuh 461 km NEDC dikonfirmasi rilis resmi Jaecoo.</p>
+    </div>
+    <ul>
+      <li><a href="https://jaecoo.id/model/jaecoo-j5-ev">jaecoo.id — J5 EV</a></li>
+      <li><a href="https://chery.co.id/en/models/csh/types/tiggo-cross-csh-hybrid">chery.co.id — Tiggo Cross CSH</a></li>
+      <li><a href="https://chery.co.id/id/model/ice/tipe/tiggo-cross-sport">chery.co.id — Tiggo Cross Sport</a></li>
+      <li><a href="https://wuling.id/id/alvez">wuling.id — Alvez EX</a></li>
+      <li><a href="https://www.hyundaimobil.co.id/public/pricelist">hyundaimobil.co.id — Pricelist Venue</a></li>
+      <li><a href="https://www.mgmotor.id/mgmodels/mgs5ev">mgmotor.id — MGS5 EV</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script>
+(function(){
+  const chips = [...document.querySelectorAll(".chip")];
+  const cars = [...document.querySelectorAll(".car")];
+  const cols = [...document.querySelectorAll("[data-col]")];
+
+  function setFilter(type){
+    chips.forEach(c => c.setAttribute("aria-pressed", String(c.dataset.filter === type)));
+    cars.forEach(car => {
+      const show = type === "all" || car.dataset.type === type;
+      car.classList.toggle("hidden", !show);
+    });
+  }
+
+  function setActive(id){
+    cars.forEach(car => car.setAttribute("aria-pressed", String(car.dataset.id === id)));
+    cols.forEach(el => el.classList.toggle("col-on", el.getAttribute("data-col") === id));
+  }
+
+  chips.forEach(chip => chip.addEventListener("click", () => setFilter(chip.dataset.filter)));
+  cars.forEach(car => car.addEventListener("click", () => setActive(car.dataset.id)));
+  setActive("j5");
+})();
+</script>
+</body>
+</html>
